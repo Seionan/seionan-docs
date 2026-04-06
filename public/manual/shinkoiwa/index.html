@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shinkoiwa House Manual</title>
+    <title>House Manual</title>
     <style>
       :root {
         --bg: #ffffff;
@@ -71,16 +71,16 @@
         display: block;
       }
 
+      .facility + .subtitle {
+        margin-top: 8px;
+      }
+
       .subtitle {
         margin: 0;
         text-align: center;
         color: var(--muted);
         font-size: clamp(1rem, 1.8vw, 1.25rem);
         line-height: 1.2;
-      }
-
-      .facility + .subtitle {
-        margin-top: 8px;
       }
 
       .subtitle + .subtitle {
@@ -127,13 +127,13 @@
           gap: 10px;
         }
 
+        .facility {
+          height: 52px;
+        }
+
         .links {
           width: min(100%, 300px);
           gap: 18px;
-        }
-
-        .facility {
-          height: 52px;
         }
 
         .link {
@@ -156,9 +156,9 @@
   <body>
     <main class="page">
       <section class="panel" aria-labelledby="title">
-        <h1 id="title" class="sr-only">Shinkoiwa House Manual</h1>
+        <h1 id="title" class="sr-only">House Manual</h1>
         <img class="brand" src="./logo.png" alt="Seionan logo" />
-        <img class="facility" src="./shinkoiwa.png" alt="Shinkoiwa" />
+        <img class="facility" src="./facility.png" alt="Facility name" />
 
         <p class="subtitle">House Manual / ご宿泊のしおり</p>
         <p class="subtitle">房屋手册 / 하우스 매뉴얼</p>

@@ -108,6 +108,30 @@
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
       }
 
+      .link--terms {
+        min-height: 74px;
+        flex-direction: column;
+        gap: 5px;
+        line-height: 1.18;
+        background: #fff;
+        color: #000;
+        border: 1px solid #000;
+      }
+
+      .link--terms span {
+        display: block;
+      }
+
+      .link--terms span:last-child {
+        font-size: 0.96em;
+      }
+
+      .divider {
+        width: min(100%, 352px);
+        border-top: 1px solid #cfcfcf;
+        margin: 6px 0 2px;
+      }
+
       .link:hover,
       .link:focus-visible {
         opacity: 0.92;
@@ -140,6 +164,14 @@
           min-height: 50px;
           font-size: 1rem;
         }
+
+        .link--terms {
+          min-height: 70px;
+        }
+
+        .divider {
+          width: min(100%, 300px);
+        }
       }
 
       @media print {
@@ -157,16 +189,21 @@
     <main class="page">
       <section class="panel" aria-labelledby="title">
         <h1 id="title" class="sr-only">House Manual</h1>
-        <img class="brand" src="/manual/haneda/logo.png" alt="Seionan logo" />
-        <img class="facility" src="/manual/haneda/facility.png" alt="Facility name" />
+        <img class="brand" src="logo.png" alt="Seionan logo" />
+        <img class="facility" src="facility.png" alt="Facility name" />
 
         <p class="subtitle">House Manual / ご宿泊のしおり</p>
         <p class="subtitle">房屋手册 / 하우스 매뉴얼</p>
 
         <nav class="links" aria-label="House manual downloads">
-          <a class="link" href="/manual/haneda/en-ja.pdf">English / 日本語</a>
-          <a class="link" href="/manual/haneda/en-zh.pdf">English / 中文</a>
-          <a class="link" href="/manual/haneda/en-ko.pdf">English / 한국어</a>
+          <a class="link" href="en-ja.pdf">English / 日本語</a>
+          <a class="link" href="en-zh.pdf">English / 中文</a>
+          <a class="link" href="en-ko.pdf">English / 한국어</a>
+          <div class="divider" aria-hidden="true"></div>
+          <a class="link link--terms" href="terms.pdf">
+            <span>Terms of Use / 施設利用規約</span>
+            <span>設施使用條款 / 시설 이용 약관</span>
+          </a>
         </nav>
       </section>
     </main>
